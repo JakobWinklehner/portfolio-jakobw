@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+import { AiFillHtml5 } from "react-icons/ai";
 
-const Bubble = () => {
-  return (
-    <div>Bubble</div>
-  )
+interface BubbleProps {
+  color: string;
+  icon: React.ReactNode;
 }
 
-export default Bubble
+const Bubble: React.FC<BubbleProps> = ({ color, icon }) => {
+  return (
+    <div
+      style={{
+        color,
+      }}
+    >
+      <div className="h-[25vh] aspect-square rounded-full border-8 border-white grid place-items-center">
+        {icon}
+      </div>
+    </div>
+  );
+};
+
+export default Bubble;
