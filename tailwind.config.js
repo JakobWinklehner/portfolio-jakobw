@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        '6': '6px',
+        // Add more custom border widths here if needed
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,4 +19,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
