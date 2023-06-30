@@ -9,6 +9,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { SiAdobephotoshop } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
+import { BsLinkedin } from "react-icons/bs";
+import { FiFigma } from "react-icons/fi";
+import { todo } from "node:test";
 
 const skills = [
   {
@@ -25,7 +28,7 @@ const skills = [
   },
   {
     color: "blue",
-    icon: <div></div>,
+    icon: <FiFigma size={120} />,
   },
 ];
 
@@ -75,9 +78,19 @@ export default function Home() {
           >
             I'm a software developer
           </motion.p>
-          <div className="pt-6">
+
+          <div className="pt-6" style={{ display: "flex" }}>
             <Link href="https://github.com/SturzGefahr123">
-              <AiFillGithub size={60} />
+              <motion.div whileHover={{ scale: 1.2 }}>
+                <AiFillGithub size={60} />
+              </motion.div>
+            </Link>
+            <Link href="https://www.linkedin.com/in/jakob-winklehner-43476a228/">
+              <div className="pl-6">
+                <motion.div whileHover={{ scale: 1.2 }}>
+                  <BsLinkedin size={60} />
+                </motion.div>
+              </div>
             </Link>
           </div>
         </div>
@@ -104,20 +117,23 @@ export default function Home() {
       </div>
       <div className="h-screen flex items-center">
         <div className="w-full">
-          <ul className="text-4xl flex items-center justify-between w-full">
-            <div className="flex items-center justify-between w-[70%] gap-x-12">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="text-6xl font-bold w-full text-center pb-20"
+          >
+            My Skills
+          </motion.div>
+
+          {/* TODO add card design*/}
+
+          <ul className="text-4xl flex items-center justify-center w-full">
+            <div className="flex items-center justify-center w-[70%] gap-x-12">
               {skills.map((skill) => (
                 <Bubble {...skill} />
               ))}
             </div>
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="text-6xl font-bold w-full text-right"
-            >
-              Skills
-            </motion.div>
           </ul>
         </div>
       </div>

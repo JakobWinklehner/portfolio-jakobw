@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { AiFillHtml5 } from "react-icons/ai";
 
 interface BubbleProps {
   color: string;
@@ -18,9 +17,8 @@ const Bubble: React.FC<BubbleProps> = ({ color, icon }) => {
     setIsHovered(false);
   };
 
-  const circleBackgroundColor = isHovered ? "white" : "black";
-  const textColor = isHovered ? "black" : "white";
-  const borderColor = isHovered ? "transparent" : "white";
+  const circleBackgroundColor = isHovered ? "#4C51BF" : "#1A202C";
+  const textColor = isHovered ? "#1A202C" : "#FFFFFF";
 
   return (
     <div
@@ -29,9 +27,9 @@ const Bubble: React.FC<BubbleProps> = ({ color, icon }) => {
       onMouseLeave={handleMouseLeave}
     >
       <motion.div
-        className="h-[25vh] aspect-square rounded-full border-8 flex items-center justify-center"
-        style={{ borderColor: borderColor }}
+        className="h-[25vh] aspect-square rounded-full flex items-center justify-center"
         whileHover={{ scale: 1.2 }} // Increase the scale on hover
+        transition={{ duration: 0.3 }}
       >
         <motion.div
           className="rounded-full w-full h-full flex items-center justify-center"
@@ -40,6 +38,9 @@ const Bubble: React.FC<BubbleProps> = ({ color, icon }) => {
           <motion.div
             className={`text-center ${isHovered ? "text-black" : "text-white"}`}
             style={{ fontSize: "4rem" }}
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
           >
             {icon}
           </motion.div>
