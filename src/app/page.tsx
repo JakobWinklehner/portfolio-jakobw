@@ -7,19 +7,21 @@ import { Suspense } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
+import { SiAdobephotoshop } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 
 const skills = [
   {
-    color: "yellow",
+    color: "white",
     icon: <BiLogoJava size={120} />,
   },
   {
-    color: "blue",
-    icon: <div></div>,
+    color: "white",
+    icon: <TbBrandCSharp size={120} />,
   },
   {
-    color: "red",
-    icon: <div></div>,
+    color: "white",
+    icon: <SiAdobephotoshop size={120} />,
   },
   {
     color: "blue",
@@ -73,9 +75,11 @@ export default function Home() {
           >
             I'm a software developer
           </motion.p>
-          <Link href="https://github.com/SturzGefahr123">
-            <AiFillGithub size={80} />
-          </Link>
+          <div className="pt-6">
+            <Link href="https://github.com/SturzGefahr123">
+              <AiFillGithub size={60} />
+            </Link>
+          </div>
         </div>
         {/*
         <motion.div
