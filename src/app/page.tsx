@@ -75,7 +75,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-8xl font-bold mt-2"
           >
-            I'm Jakob.
+            I&apos;m Jakob.
           </motion.h1>
 
           <motion.p
@@ -84,7 +84,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-2xl mt-6 text-gray-400"
           >
-            I'm a software developer
+            I&apos;m a software developer
           </motion.p>
 
           <div className="pt-6" style={{ display: "flex" }}>
@@ -149,7 +149,7 @@ export default function Home() {
           <ul className="text-4xl flex items-center justify-center w-full">
             <div className="flex items-center justify-center w-[70%] gap-x-12">
               {skills.map((skill) => (
-                <Bubble {...skill} />
+                <Bubble key={crypto.randomUUID()} {...skill} />
               ))}
             </div>
           </ul>
