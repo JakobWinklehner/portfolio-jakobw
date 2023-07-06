@@ -112,25 +112,12 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        {/*
-        <motion.div
-          className="absolute !w-1/2 h-screen top-0 right-0 grid place-items-center"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <Image
-            src="/iauwbdizawfiuwabdawiuawdiubawdiwi.png"
-            alt=""
-            fill
-            className="object-contain w-full !h-[50vh] relative"
-          />
-  </motion.div>*/}
 
+        {/*}
         <Spline
           scene="../room_relaxing_copy_copy.spline"
           className="absolute !w-1/2 h-screen right-0 top-0 "
-        />
+  />*/}
       </div>
       <div className="h-screen flex items-center">
         <div className="w-full">
@@ -146,7 +133,7 @@ export default function Home() {
             (Click the bubbles for more info)
           </div>
 
-          <ul className="text-4xl flex items-center justify-center w-full">
+          <ul className="text-4xl flex flex-col items-center justify-center w-full">
             <div className="flex items-center justify-center w-[70%] gap-x-12">
               {skills.map((skill) => (
                 <Bubble key={crypto.randomUUID()} {...skill} />
