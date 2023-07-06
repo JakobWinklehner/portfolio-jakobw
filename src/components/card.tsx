@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({
           transition={{ duration: 0.3 }}
           className="fixed inset-0 flex items-center justify-center"
         >
-          <div className="min-w-[800px] min-h-[500px] max-w-5xl mx-auto bg-white rounded-lg p-8">
+          <div className="min-w-[800px] min-h-[500px] max-w-5xl mx-auto bg-white rounded-lg p-8 relative flex flex-col">
             <div className="flex flex-col h-full">
               <div className="flex justify-between mb-6">
                 <button
@@ -53,7 +53,7 @@ const Card: React.FC<CardProps> = ({
                   </svg>
                 </button>
               </div>
-              <div className="flex parent h-full items-center">
+              <div className="flex grow h-full items-center">
                 <div className="flex items-center justify-center pr-36 text-black flex-shrink-0">
                   {icon}
                 </div>
