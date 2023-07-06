@@ -12,6 +12,7 @@ import { SiAdobephotoshop } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { BsLinkedin } from "react-icons/bs";
 import { FiFigma } from "react-icons/fi";
+import { About } from "@/components/about";
 
 {
   /*import Spline from "./room_relaxing_copy_copy.spline"; */
@@ -21,22 +22,26 @@ const skills = [
   {
     icon: <BiLogoJava size={120} />,
     cardTitle: "Java",
-    cardDescription: "asd",
+    cardDescription:
+      "Java is a widely-used, object-oriented programming language known for its platform independence and versatility in building applications for diverse environments.",
   },
   {
     icon: <TbBrandCSharp size={120} />,
     cardTitle: "C#",
-    cardDescription: "asd",
+    cardDescription:
+      "C# is a powerful, modern programming language developed by Microsoft, commonly used for building Windows applications, web services, and games.",
   },
   {
     icon: <SiAdobephotoshop size={120} />,
     cardTitle: "Photoshop",
-    cardDescription: "asd",
+    cardDescription:
+      "Professional image editing software for graphic design, photo editing, and digital art with a wide range of tools and features.",
   },
   {
     icon: <FiFigma size={120} />,
     cardTitle: "Figma",
-    cardDescription: "asd",
+    cardDescription:
+      "Cloud-based collaborative design tool for creating, prototyping, and collaborating on user interfaces and digital designs in real-time.",
   },
 ];
 
@@ -118,6 +123,9 @@ export default function Home() {
           scene="../room_relaxing_copy_copy.spline"
           className="absolute !w-1/2 h-screen right-0 top-0 "
   />*/}
+      </div>
+      <div className="h-screen flrx items-center">
+        <About />
       </div>
       <div className="h-screen flex items-center">
         <div className="w-full">

@@ -54,12 +54,14 @@ const Card: React.FC<CardProps> = ({
                 </button>
               </div>
               <div className="flex grow h-full items-center">
-                <div className="flex items-center justify-center pr-36 text-black flex-shrink-0">
+                <div className="flex items-center justify-center pr-28 pl-4 text-black flex-shrink-0">
                   {icon}
                 </div>
                 <div className="flex flex-col justify-center">
                   <h1 className="text-black font-bold">{cardTitle}</h1>
-                  <p className="text-gray-600 pt-2">{cardDescription}</p>
+                  <p className="text-gray-600 pt-2 text-2xl">
+                    {cardDescription}
+                  </p>
                 </div>
               </div>
             </div>
