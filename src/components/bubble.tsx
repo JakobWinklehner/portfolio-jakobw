@@ -28,8 +28,9 @@ const Bubble: React.FC<BubbleProps> = ({
     setIsCardOpen(!isCardOpen);
   };
 
-  const circleBackgroundColor = isHovered ? "#4C51BF" : "#1A202C";
-  const textColor = isHovered ? "#1A202C" : "#FFFFFF";
+  const circleBackgroundColor = isHovered
+    ? "linear-gradient(45deg, #772f94, #0891b2)"
+    : "#1A202C";
 
   return (
     <div>
@@ -44,10 +45,10 @@ const Bubble: React.FC<BubbleProps> = ({
       >
         <motion.div
           className="rounded-full w-full h-full flex items-center justify-center"
-          style={{ backgroundColor: circleBackgroundColor }}
+          style={{ background: circleBackgroundColor }}
         >
           <motion.div
-            className={`text-center ${isHovered ? "text-black" : "text-white"}`}
+            className="text-center text-white"
             style={{ fontSize: "4rem" }}
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
