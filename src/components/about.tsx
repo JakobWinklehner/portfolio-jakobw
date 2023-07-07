@@ -2,6 +2,7 @@ import React from "react";
 import { MdSportsTennis } from "react-icons/md";
 import { IoIosFitness } from "react-icons/io";
 import { FaSkiing } from "react-icons/fa";
+import { Hobbies } from "./hobbies";
 
 export const About = () => {
   return (
@@ -19,19 +20,7 @@ export const About = () => {
         </div>
         <div className="text-4xl pt-10 font-bold">Hobbies:</div>
 
-        <div className="flex pt-6">
-          <div className="rounded-full h-20 w-20 bg-white flex justify-center items-center">
-            <IoIosFitness size={50} color="black" />
-          </div>
-          <div className="w-6" />
-          <div className="rounded-full h-20 w-20 bg-white flex justify-center items-center">
-            <MdSportsTennis size={50} color="black" />
-          </div>
-          <div className="w-6" />
-          <div className="rounded-full h-20 w-20 bg-white flex justify-center items-center">
-            <FaSkiing size={50} color="black" />
-          </div>
-        </div>
+        <Hobbies />
       </div>
       <div className="w-1/3 ps-36 flex items-center">
         <div className="rounded-full h-80 w-80 p-1 bg-gradient-to-bl from-[#772f94] to-cyan-600 flex justify-center items-center">
