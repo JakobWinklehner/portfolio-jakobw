@@ -2,10 +2,26 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div>
-      <div className="text-6xl font-bold flex justify-end">About me</div>
-      <div className="text-3xl">
-        I am Jakob and 18 year old software engineer
+    <div className="flex">
+      <div className="flex flex-col w-2/3">
+        <div className="text-6xl font-bold">About me</div>
+        <div className="text-2xl pt-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsam
+          adipisci, fugit officia reprehenderit modi natus eaque atque aliquam
+          ex odit deserunt! Suscipit accusamus dignissimos beatae excepturi
+          tempora, a cum! Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. In ullam praesentium voluptatum quas ipsum delectus quia
+          officiis temporibus iure qui repellat cumque minima porro nobis fuga
+          numquam, vitae ratione inventore.
+        </div>
+      </div>
+      <div className="w-1/3 ps-36">
+        <div className="rounded-full h-80 w-80 p-1 bg-gradient-to-bl from-[#772f94] to-cyan-600 flex justify-center items-center">
+          <img
+            src="/picofme2.png"
+            className="w-76 h-76 object-cover border-8 border-black rounded-full"
+          />
+        </div>
       </div>
     </div>
   );

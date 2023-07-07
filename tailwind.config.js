@@ -9,8 +9,16 @@ module.exports = {
     extend: {
       borderWidth: {
         '6': '6px',
+        '16': '16px',
         // Add more custom border widths here if needed
       },
+      width: {
+        '76': '19rem',
+      },
+      height: {
+        '76': '19rem',
+      },
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

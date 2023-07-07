@@ -124,7 +124,7 @@ export default function Home() {
           className="absolute !w-1/2 h-screen right-0 top-0 "
   />*/}
       </div>
-      <div className="h-screen flrx items-center">
+      <div className="h-screen">
         <About />
       </div>
       <div className="h-screen flex items-center">
@@ -133,7 +133,7 @@ export default function Home() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-6xl font-bold w-full text-center "
+            className="text-6xl font-bold w-full text-center"
           >
             My Skills
           </motion.div>
