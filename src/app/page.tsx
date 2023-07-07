@@ -124,7 +124,7 @@ export default function Home() {
           className="absolute !w-1/2 h-screen right-0 top-0 "
   />*/}
       </div>
-      <div className="h-screen">
+      <div className="h-screen flex items-center">
         <About />
       </div>
       <div className="h-screen flex items-center">
