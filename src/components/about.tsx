@@ -1,7 +1,4 @@
 import React from "react";
-import { MdSportsTennis } from "react-icons/md";
-import { IoIosFitness } from "react-icons/io";
-import { FaSkiing } from "react-icons/fa";
 import { Hobbies } from "./hobbies";
 
 export const About = () => {

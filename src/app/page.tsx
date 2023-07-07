@@ -93,7 +93,7 @@ export default function Home() {
           </motion.p>
 
           <div className="pt-6" style={{ display: "flex" }}>
-            <Link href="https://github.com/SturzGefahr123">
+            <Link href="https://github.com/SturzGefahr123" target="_blank">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -103,7 +103,10 @@ export default function Home() {
                 <AiFillGithub size={60} />
               </motion.div>
             </Link>
-            <Link href="https://www.linkedin.com/in/jakob-winklehner-43476a228/">
+            <Link
+              href="https://www.linkedin.com/in/jakob-winklehner-43476a228/"
+              target="_blank"
+            >
               <div className="pl-6">
                 <motion.div
                   initial={{ opacity: 0 }}
