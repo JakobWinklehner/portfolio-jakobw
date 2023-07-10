@@ -119,6 +119,11 @@ export default function Home() {
               </div>
             </Link>
           </div>
+          <div className="pt-12">
+            <button className="bg-white rounded px-6 py-3 text-black">
+              Contact me
+            </button>
+          </div>
         </div>
 
         {/*}

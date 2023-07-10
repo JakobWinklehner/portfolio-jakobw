@@ -2,6 +2,7 @@ import React from "react";
 import { Hobbies } from "./hobbies";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Balancer } from "react-wrap-balancer";
 
 export const About = () => {
   const [ref, inView] = useInView({
@@ -37,13 +38,15 @@ export const About = () => {
           About me
         </motion.div>
         <motion.div variants={textVariants} className="text-2xl pt-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsam
-          adipisci, fugit officia reprehenderit modi natus eaque atque aliquam
-          ex odit deserunt! Suscipit accusamus dignissimos beatae excepturi
-          tempora, a cum! Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit. In ullam praesentium voluptatum quas ipsum delectus quia
-          officiis temporibus iure qui repellat cumque minima porro nobis fuga
-          numquam, vitae ratione inventore.
+          <Balancer>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            ipsam adipisci, fugit officia reprehenderit modi natus eaque atque
+            aliquam ex odit deserunt! Suscipit accusamus dignissimos beatae
+            excepturi tempora, a cum! Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. In ullam praesentium voluptatum quas ipsum
+            delectus quia officiis temporibus iure qui repellat cumque minima
+            porro nobis fuga numquam, vitae ratione inventore.
+          </Balancer>
         </motion.div>
         <motion.div
           variants={textVariants}
