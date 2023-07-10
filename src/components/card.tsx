@@ -34,7 +34,7 @@ const Card: React.FC<CardProps> = ({
             <div className="flex flex-col grow h-full relative">
               <div className="flex justify-between mb-6">
                 <button
-                  className="text-gray-500 hover:text-gray-700"
+                  className="text-gray-500 hover:text-gray-700 absolute"
                   onClick={handleBubbleClick}
                 >
                   <svg
